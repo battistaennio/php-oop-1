@@ -19,7 +19,7 @@ body {
 
 /* regole card */
 .card {
-    margin: 0 50px;
+    margin: 50px;
     width: calc(100% / 4 - 100px);
     color: white;
     background-color: black;
