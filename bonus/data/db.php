@@ -4,7 +4,8 @@ require_once __DIR__ . '/../Models/Movie.php';
 
 $movies = [
     new Movie(
-        "Spider-Man", 
+        "Spider-Man",
+        "https://mr.comingsoon.it/imgdb/locandine/235x336/1058.jpg",
         "Sam Raimi", 
         121, 
         2002, 
@@ -13,6 +14,7 @@ $movies = [
     ),
     new Movie(
         "Ex Machina",
+        "https://mr.comingsoon.it/imgdb/locandine/235x336/50898.jpg",
         "Alex Garland",
         108,
         2015,
