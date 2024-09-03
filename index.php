@@ -8,6 +8,9 @@
 
 <?php
 
+class Movie{
+    
+}
 
 
 ?>
