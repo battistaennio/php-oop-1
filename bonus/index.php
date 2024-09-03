@@ -52,7 +52,7 @@ require_once __DIR__ . '/data/db.php';
               </div>
               
               <div class="details-section">
-                <h4>durata:</h4>
+                <h4>Durata:</h4>
                 <span><?php echo $film->runningTime ?> minuti</span>
               </div>
               
@@ -62,7 +62,7 @@ require_once __DIR__ . '/data/db.php';
               </div>
               
               <div class="details-section">
-                <h4>genere:</h4>
+                <h4>Genere:</h4>
                 <?php echo $film->printList($film->genres) ?>
               </div>
               
