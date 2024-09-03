@@ -29,8 +29,51 @@ require_once __DIR__ . '/data/db.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movies</title>
+
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    
+    <div id="wrapper">
+
+      <div class="card">
+
+        <img src="https://mr.comingsoon.it/imgdb/locandine/235x336/1058.jpg" alt="">
+
+        <div class="card-details">
+
+          <div class="details-section">
+            <h2>Titolo</h2>
+          </div>
+
+          <div class="details-section">
+            <h4>Regia:</h4>
+            <span>regista</span>
+          </div>
+          
+          <div class="details-section">
+            <h4>durata:</h4>
+            <span>minuti</span>
+          </div>
+          
+          <div class="details-section">
+            <h4>Anno di pubblicazione:</h4>
+            <span>2024</span>
+          </div>
+          
+          <div class="details-section">
+            <h4>genere:</h4>
+            <span>azione</span>
+          </div>
+          
+          <div class="details-section">
+            <h4>Cast:</h4>
+            <p>cast</p>
+          </div>
+          
+        </div>
+
+      </div>
+
+    </div>
 </body>
 </html>
