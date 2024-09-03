@@ -63,12 +63,12 @@ require_once __DIR__ . '/data/db.php';
               
               <div class="details-section">
                 <h4>genere:</h4>
-                <span>azione</span>
+                <?php echo $film->printList($film->genres) ?>
               </div>
               
               <div class="details-section">
                 <h4>Cast:</h4>
-                <p>cast</p>
+                <?php echo $film->printList($film->cast) ?>
               </div>
               
             </div>
