@@ -42,6 +42,16 @@ $spiderMan = new Movie(
 
 $spiderMan->addActor("Macy Gray");
 
-var_dump($spiderMan)
+
+$exMachina = new Movie(
+    "Ex Machina",
+    "Alex Garland",
+    108,
+    2015,
+    ["Domhnall Gleeson", "Oscar Isaac", "Alicia Vikander", "Chelsea Li", "Evie Wray", "Sonoya Mizuno", "Corey Johnson"],
+    ["Drammatico", "Fantascienza"]
+);
+
+var_dump($spiderMan, $exMachina)
 
 ?>
