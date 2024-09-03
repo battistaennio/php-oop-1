@@ -9,7 +9,12 @@
 <?php
 
 class Movie{
-    
+    public $title;
+    public $director;
+    public $runningTime;
+    public $releseDate;
+    public $cast;
+    public $genres;
 }
 
 
