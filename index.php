@@ -17,6 +17,15 @@ class Movie{
     public $cast = [];
     public $genres = [];
 
+    public function __construct($_title, $_director, $_runningTime, $_releseDate, $_cast, $_genres){
+        $this->title = $_title;
+        $this->director = $_director;
+        $this->runningTime = $_runningTime;
+        $this->releseDate = $_releseDate;
+        $this->cast = $_cast;
+        $this->genres = $_genres;
+    }
+
 }
 
 ?>
