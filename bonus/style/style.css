@@ -13,14 +13,14 @@ body {
 #wrapper {
     margin: 5% auto;
     display: flex;
-    justify-content: space-around;
-
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 /* regole card */
 .card {
-    min-height: 250px;
-    width: 300px;
+    margin: 0 50px;
+    width: calc(100% / 4 - 100px);
     color: white;
     background-color: black;
     border-radius: 10px;
