@@ -35,45 +35,47 @@ require_once __DIR__ . '/data/db.php';
 <body>
     <div id="wrapper">
 
-      <div class="card">
+      <?php foreach($movies as $film): ?>
+          <div class="card">
 
-        <img src="https://mr.comingsoon.it/imgdb/locandine/235x336/1058.jpg" alt="">
+            <img src="<?php echo $film->img?>" alt="<?php echo $film->title?> thumbnail">
 
-        <div class="card-details">
+            <div class="card-details">
 
-          <div class="details-section">
-            <h2>Titolo</h2>
-          </div>
+              <div class="details-section">
+                <h2><?php echo $film->title ?></h2>
+              </div>
 
-          <div class="details-section">
-            <h4>Regia:</h4>
-            <span>regista</span>
-          </div>
-          
-          <div class="details-section">
-            <h4>durata:</h4>
-            <span>minuti</span>
-          </div>
-          
-          <div class="details-section">
-            <h4>Anno di pubblicazione:</h4>
-            <span>2024</span>
-          </div>
-          
-          <div class="details-section">
-            <h4>genere:</h4>
-            <span>azione</span>
-          </div>
-          
-          <div class="details-section">
-            <h4>Cast:</h4>
-            <p>cast</p>
-          </div>
-          
-        </div>
+              <div class="details-section">
+                <h4>Regia:</h4>
+                <span><?php echo $film->director ?></span>
+              </div>
+              
+              <div class="details-section">
+                <h4>durata:</h4>
+                <span><?php echo $film->runningTime ?> minuti</span>
+              </div>
+              
+              <div class="details-section">
+                <h4>Anno di pubblicazione:</h4>
+                <span><?php echo $film->releseYear ?></span>
+              </div>
+              
+              <div class="details-section">
+                <h4>genere:</h4>
+                <span>azione</span>
+              </div>
+              
+              <div class="details-section">
+                <h4>Cast:</h4>
+                <p>cast</p>
+              </div>
+              
+            </div>
 
-      </div>
-
+          </div>
+      <?php endforeach; ?>
+      
     </div>
 </body>
 </html>
