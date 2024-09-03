@@ -13,19 +13,22 @@ class Movie{
     public $title;
     public $director;
     public $runningTime;
-    public $releseDate;
+    public $releseYear;
     public $cast = [];
     public $genres = [];
 
-    public function __construct($_title, $_director, $_runningTime, $_releseDate, $_cast, $_genres){
+    public function __construct($_title, $_director, $_runningTime, $_releseYear, $_cast, $_genres){
         $this->title = $_title;
         $this->director = $_director;
         $this->runningTime = $_runningTime;
-        $this->releseDate = $_releseDate;
+        $this->releseYear = $_releseYear;
         $this->cast = $_cast;
         $this->genres = $_genres;
     }
 
+    public function addActor($_actor){
+        $this->cast[] = $_actor;
+    }  
 }
 
 ?>
