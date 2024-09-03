@@ -31,4 +31,17 @@ class Movie{
     }  
 }
 
+$spiderMan = new Movie(
+    "Spider-Man", 
+    "Sam Raimi", 
+    121, 
+    2002, 
+    ["Tobey Maguire", "Willem Dafoe", "Kirsten Dunst", "James Franco", "J.K. Simmons", "Rosemary Harris", "Cliff Robertson", "Michael Papajohn", "Randy Savage", "Joe Manganiello", "Ted Raimi", "Bill Nunn"], 
+    ["action"]
+);
+
+$spiderMan->addActor("Macy Gray");
+
+var_dump($spiderMan)
+
 ?>
