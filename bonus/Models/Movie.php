@@ -23,5 +23,17 @@ class Movie{
     public function addActor($_actor){
         $this->cast[] = $_actor;
     }  
+
+    public function printList($array){
+        $list = '<ul>';
+        
+        foreach($array as $element){
+            $list .= "<li>$element</li>";
+        }
+
+        $list .= '</ul>';
+
+        echo $list;
+    }
     
 }
